@@ -9,6 +9,9 @@ import {
 } from '@expo-google-fonts/inter';
 
 import { Horse, Heart, Cube } from 'phosphor-react-native';
+import { Cadastro } from './src/screens/Cadastro';
+import { AgendarConsulta } from './src/screens/AgendarConsulta';
+import { Historico } from './src/screens/Historico';
 
 
 export default function App() {
@@ -21,13 +24,7 @@ export default function App() {
 		return (<ActivityIndicator />)
 	}
   return (
-    <View style={styles.container}>
-
-      <Heart color="#AE2983" weight="fill" size={32} />
-
-      <Text style={styles.text}>CLÉO, EU TE AMO!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AgendarConsulta />
   );
 }
 
@@ -39,6 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontSize: 32
+    fontSize: 32,
+    color: '#AE2983'
   }
 });

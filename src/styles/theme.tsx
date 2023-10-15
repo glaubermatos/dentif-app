@@ -3,9 +3,10 @@ export const THEME = {
         WHITE: '#FFFFFF',
 
         GRAY_100: '#F7F8F7',
-        GRAY_200: '#8D948D',
-        GRAY_400: '#6B706B',
-        GRAY_500: '#3C3F3C',
+        GRAY_200: '#D9D9D9',
+        GRAY_300: '#8D948D',
+        GRAY_400: '#373937',
+        GRAY_500: '#303331',
 
         GREEN_LIGHT: '#3FA14C15',
         GREEN: '#3FA14C',
@@ -30,7 +31,7 @@ export const THEME = {
 
             XXL: 24,
 
-            TAG: 8,
+            TAG: 10,
             BUTTON: 15
         }
     }
