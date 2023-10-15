@@ -8,6 +8,8 @@ import {
   Inter_700Bold,
 } from '@expo-google-fonts/inter';
 
+import { Horse, Heart, Cube } from 'phosphor-react-native';
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,6 +22,9 @@ export default function App() {
 	}
   return (
     <View style={styles.container}>
+
+      <Heart color="#AE2983" weight="fill" size={32} />
+
       <Text style={styles.text}>CLÉO, EU TE AMO!</Text>
       <StatusBar style="auto" />
     </View>
