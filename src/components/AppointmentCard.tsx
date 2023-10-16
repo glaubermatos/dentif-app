@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     infoText: {
         fontSize: THEME.FONT_SIZE.INTER.MD,
         fontFamily: THEME.FONT_FAMILY.INTER.REGULAR,
-        color: THEME.COLORS.GRAY_500,
+        color: THEME.COLORS.GRAY_400,
     }
 
 });

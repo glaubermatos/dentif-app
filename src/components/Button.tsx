@@ -8,6 +8,7 @@ type Props = TouchableOpacityProps & {
 export const Button: React.FC<Props> = ({title, ...rest}) => {
     return (
         <TouchableOpacity
+            activeOpacity={0.7}
             style={styles.container}
             {...rest}
         >

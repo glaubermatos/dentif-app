@@ -8,7 +8,8 @@ export const THEME = {
         // GRAY_200: '#D9D9D9',
         GRAY_300: '#8D948D',
         GRAY_400: '#373937',
-        GRAY_500: '#303331',
+        GRAY_500: '#323432',
+        // GRAY_500: '#303331',
 
         GREEN_LIGHT: '#3FA14C15',
         GREEN: '#3FA14C',

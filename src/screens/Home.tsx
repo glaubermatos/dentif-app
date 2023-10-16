@@ -75,10 +75,10 @@ export const Home = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: -24,
+        // marginTop: -24,
         paddingHorizontal: 24,
-        borderTopLeftRadius: 40,
-        borderTopRightRadius: 40,
+        // borderTopLeftRadius: 40,
+        // borderTopRightRadius: 40,
         paddingTop: 40,
         backgroundColor: THEME.COLORS.WHITE,
 

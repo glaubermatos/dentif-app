@@ -25,7 +25,7 @@ export const HomeHeader: React.FC<Props> = ({username}) => {
     return (
         <View style={[styles.container, {paddingTop}]}>
             <View style={styles.profile}>
-                <Text style={styles.text}>Olá</Text>
+                <Text style={[styles.text, {opacity: 0.8}]}>Olá</Text>
 
                 <TouchableOpacity
                     onPress={handleNavigateToCadastro}
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     container: {
         paddingHorizontal: 24,
         paddingVertical: 16,
-        paddingBottom: 48,
+        // paddingBottom: 48,
         backgroundColor: THEME.COLORS.GREEN,
 
         flexDirection: 'row',
