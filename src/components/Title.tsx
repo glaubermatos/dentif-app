@@ -21,13 +21,11 @@ export const Title: React.FC<Props> = ({title, subtitle}) => {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        gap: 4
-    },
+    container: {},
     title: {
         fontSize: THEME.FONT_SIZE.INTER.LG,
         fontFamily: THEME.FONT_FAMILY.INTER.BOLD,
-        color: THEME.COLORS.GRAY_500,
+        color: THEME.COLORS.GRAY_400,
     },
     subtitle: {
         fontSize: THEME.FONT_SIZE.INTER.SM,

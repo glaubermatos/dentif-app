@@ -19,7 +19,6 @@ export const Specialty: React.FC<Props> = ({specialty, icon: Icon, professionalN
             {...rest}
         >
             <View style={styles.iconContainer}>
-                {/* <Tooth size={24} color={THEME.COLORS.BLUE} /> */}
                 <Icon size={24} color={THEME.COLORS.BLUE} />
             </View>
 
@@ -81,6 +80,6 @@ const styles = StyleSheet.create({
     professionalName: {
         fontSize: THEME.FONT_SIZE.INTER.MD,
         fontFamily: THEME.FONT_FAMILY.INTER.BOLD,
-        color: THEME.COLORS.GRAY_500,
+        color: THEME.COLORS.GRAY_400,
     },
 });

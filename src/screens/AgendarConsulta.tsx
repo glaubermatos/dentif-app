@@ -14,7 +14,12 @@ export const AgendarConsulta = () => {
             <Header title="Agendar consulta" />
 
             <View style={styles.content}>
-                <Container>
+                <View 
+                    style={{
+                        marginTop: 40,
+                        marginHorizontal: 24,
+                    }}
+                >
                     <View style={styles.infoContent}>
                         <View>
                             <Text style={styles.label}>
@@ -36,12 +41,12 @@ export const AgendarConsulta = () => {
 
                             <Location 
                                 icon={MapPin}
-                                local="Luiz Geraldo Márcio Gonçalves"
+                                local="Núcleo de atendimento especializado ao discente"
                             />
                         </View>
 
                     </View>
-                </Container>
+                </View>
 
                 <View style={styles.calendarContainer}>
                     <AppointmentCalendar />
@@ -57,7 +62,8 @@ export const AgendarConsulta = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: THEME.COLORS.WHITE,
     },
     content: {
         flex: 1,
@@ -73,6 +79,6 @@ const styles = StyleSheet.create({
     },
 
     calendarContainer: {
-        marginTop: 24
+        marginTop: 40
     }
 });

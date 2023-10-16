@@ -9,33 +9,53 @@ import { HomeHeader } from "../components/HomeHeader";
 import { Specialty } from "../components/Specialty";
 import { AppointmentCard } from "../components/AppointmentCard";
 import { Tooth } from "phosphor-react-native";
+import { Container } from "../layout/Container";
+import { useNavigation } from "@react-navigation/native";
 
 export const Cadastro = () => {
+    const navigation = useNavigation();
+
+    function handleNavigateToHome() {
+        navigation.navigate('home')
+    }
+
     return (
         <View style={styles.container}>
-            {/* <Header title="Cadastro" /> */}
-            <HomeHeader />
+            <Header title="Cadastro" />
 
-            <Title title="Cadastre-se" subtitle="Para utilizar nosso app de agendamento de serviços especializados" />
+            <Container>
+                <Title 
+                    title="Cadastre-se" 
+                    subtitle="Para utilizar nosso app de agendamento de serviços especializados" 
+                />
 
-            <Input placeholder="Nome" />
+                <View style={styles.form}>
+                    <Input placeholder="Nome" />
+                    <Input placeholder="E-mail" />
+                    <Input placeholder="Matŕicula" />
+                    <Input placeholder="Telefone" />
+                </View>
 
-            <Button title="Salvar" />
+            </Container>
 
-            <Specialty 
-                icon={Tooth}
-                specialty="Dentista" 
-                professionalName="Luiz Geraldo Mácio Gonçalves" 
-                activeClick={true}
-            />
-
-            <AppointmentCard status="Agendada"   />
+            <View style={styles.actionsContainer}>
+                <Button onPress={handleNavigateToHome} title="Salvar" />
+            </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         backgroundColor: THEME.COLORS.WHITE,
+    },
+    form: {
+        marginTop: 16,
+        gap: 16
+    },
+    actionsContainer:{
+        marginHorizontal: 24,
+        marginBottom: 40
     }
 });

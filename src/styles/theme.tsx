@@ -2,8 +2,10 @@ export const THEME = {
     COLORS: {
         WHITE: '#FFFFFF',
 
-        GRAY_100: '#F7F8F7',
-        GRAY_200: '#D9D9D9',
+        GRAY_100: '#FAFAFA',
+        // GRAY_100: '#F7F8F7',
+        GRAY_200: '#EDEDED',
+        // GRAY_200: '#D9D9D9',
         GRAY_300: '#8D948D',
         GRAY_400: '#373937',
         GRAY_500: '#303331',
@@ -11,7 +13,7 @@ export const THEME = {
         GREEN_LIGHT: '#3FA14C15',
         GREEN: '#3FA14C',
 
-        BLUE_EXTRA_LIGHT: '#4489C805',
+        BLUE_EXTRA_LIGHT: '#4489C810',
         BLUE_LIGHT: '#4489C815',
         BLUE: '#4489C8',
     },

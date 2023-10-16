@@ -5,25 +5,31 @@ import { THEME } from "../styles/theme";
 import { Tag, TagStyleProps } from "./Tag";
 
 type Props = {
+    specialty: string,
+    professionalName: string,
+    date: string,
+    time: string,
     status?: TagStyleProps;
 }
 
-export const AppointmentCard: React.FC<Props> = ({status}) => {
+export const AppointmentCard: React.FC<Props> = ({specialty, professionalName, date, time, status}) => {
     return (
         <View style={styles.container}>
 
             <Specialty 
                 icon={Tooth}
-                specialty="Dentista" 
-                professionalName="Luiz Geraldo Márcio Gonçalves"
+                specialty={specialty}
+                professionalName={professionalName}
             />
+
+            {status && (<Tag name={status} />)}
 
             <View style={styles.dateInformationContainer}>
                 <View style={styles.info}>
                     <CalendarBlank size={20} color={THEME.COLORS.BLUE} />
 
                     <Text style={styles.infoText}>
-                        Ter, 17 de Jul 2023
+                        {date}
                     </Text>
                 </View>
 
@@ -31,19 +37,19 @@ export const AppointmentCard: React.FC<Props> = ({status}) => {
                     <Clock size={20} color={THEME.COLORS.BLUE} />
 
                     <Text style={styles.infoText}>
-                        10:00 am
+                        {time}
                     </Text>
                 </View>
             </View>
             
-            {status && (<Tag name={status} />)}
         </View>        
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        padding: 12,
+        padding: 16,
+        
         backgroundColor: THEME.COLORS.GRAY_100,
         borderRadius: 8,
         borderWidth: 1,

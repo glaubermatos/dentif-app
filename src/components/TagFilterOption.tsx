@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     text: {
         textTransform: 'uppercase',
-        color: THEME.COLORS.GRAY_400,
+        color: THEME.COLORS.GRAY_300,
         fontSize: THEME.FONT_SIZE.INTER.SM,
         fontFamily: THEME.FONT_FAMILY.INTER.BOLD
     }

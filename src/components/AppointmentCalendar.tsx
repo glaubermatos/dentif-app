@@ -107,7 +107,7 @@ export const AppointmentCalendar = () => {
                 </View>
 
                 <FlatList 
-                    data={[{time: '08:00 am', time2: '09:00 am'}, {time: '10:00 am', time2: '11:00 am'}, {time: '14:00 pm', time2: '15:00 pm'}, {time: '16:00 pm', time2: '17:00 pm'}]}
+                    data={[{time: '08:00', time2: '09:00'}, {time: '10:00', time2: '11:00'}, {time: '14:00', time2: '15:00'}, {time: '16:00', time2: '17:00'}]}
                     horizontal 
                     keyExtractor={(item) => item.time}
                     renderItem={({item}) => renderTimeItem(item)}
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
 
 
     dayItemContainer: {
-        width: 60,
+        width: 62,
 
         backgroundColor: THEME.COLORS.GRAY_100,
         borderRadius: 8,

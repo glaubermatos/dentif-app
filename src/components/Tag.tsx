@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     container: {
         paddingHorizontal: 8,
         position: 'absolute',
-        top: 12,
-        right: 12,
+        top: 8,
+        right: 8,
 
         height: 20,
         borderRadius: 8,
